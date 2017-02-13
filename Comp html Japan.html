@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+      <title>Transience</title>
+      <link rel="stylesheet" href="CSS text Japan.css">
+  </head>
+
+<body>
+
+
+<h2 class="w3-center">Discover the unique seasons of Japan</h2>
+
+<div class="w3-content w3-section" style="stylesheet">
+  <img class="mySlides" src="pictures/summer photo 1.jpg" style="width:100%">
+  <img class="mySlides" src="pictures/spring blossom.jpg" style="width:100%">
+  <img class="mySlides" src="pictures/autumn japan.jpg" style="width:100%">
+<!-- add the final image to slideshow-->
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+</script>
+
+<ul>
+  <li><a href="Autumn">Autumn</a></li>
+  <li><a href="Spring">Spring</a></li>
+  <li><a href="Winter">Winter</a></li>
+  <li><a href="Summer">Summer</a></li>
+  <li><a href="Book Holiday Now!">Book Holiday now</a></li>
+</ul>
+
+</body>
+
+
+
+
+
+</html>
