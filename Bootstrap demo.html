@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Linking to javascript and bootstrap libraries-->
+
+</head>
+<body>
+
+<div class="container" style="width:100%">
+  <div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12" <div class="w3-content w3-section" style="stylesheet">
+    <img class="mySlides" src="pictures/summer photo 1.jpg" style= "height:500px; width: 100%">
+    <img class="mySlides" src="pictures/spring blossom.jpg" style= "height:500px; width: 100%">
+    <img class="mySlides" src="pictures/autumn japan32.jpg" style= "height:500px; width: 100%">
+    <img class="mySlides" src="pictures/winter japan 32.jpg" style= "height:500px; width: 100%">
+<!-- imgs used in javascript carousel slideshow. Let me know if you find better pictures to include :-) -->
+
+<div class= "carousel-caption">
+<!-- Used caption function for javascript carousel to add title to main page-->
+
+<style>
+
+h1 {
+
+  text-align: center;
+  font-family: helvetica;
+  margin: 0;
+  padding: 17%;
+  font-size: 400%;
+}
+
+</style>
+
+  <h1>Discover the Seasons of Japan</h1>
+</div>
+
+
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+    </script>
+<!-- This is the script needed to run the slideshow. Suggest easier coding option if found-->
+
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<!-- These are the button styles found on the bootstrap library-->
+
+<div class="container2">
+  <div class="row2">
+    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center; font-family: helvetica; font-size: 200%">Find your ideal travel season here!</div>
+      <div class="btn-toolbar">
+        <button type="button" class="btn btn-info btn-lg">Winter</button>
+         <button type="button" class="btn btn-danger btn-lg">Autumn</button>
+         <button type="button" class="btn btn-warning btn-lg">Summer</button>
+         <button type="button" class="btn btn-success btn-lg">Spring</button>
+         <button type="button" class="btn btn-primary btn-lg">Book Holiday</button>
+
+<!-- Just some positioning I wrote to align the buttons and text at the bottom. I used the grid system
+provided by bootstrap to divide the webpage into two rows. The javascript in the top row, and the buttons in the second row -->
+<style>
+
+  .btn-toolbar {
+    padding-top: 5%;
+    padding-left: 31%;
+
+  }
+
+  .container2 {
+    border-style: solid;
+    border-color: skyblue;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-bottom: 2%;
+    background-color: skyblue;
+
+  }
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
