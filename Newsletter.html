@@ -1,1 +1,95 @@
-<!DOCTYP html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>Newsletter sign-up</title><meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Linking to javascript and bootstrap libraries-->
+
+</head>
+
+<body>
+
+
+  <!-- making the newsletter sign-up box transparent - DAWN -->
+  <div class="background">
+    <div class="transbox">
+      <h1>Sign up for our Newsletter</h1>
+      <p>Input your email below:</p>
+      <input type="email" placeholder="Your email">
+      <input type="submit">
+    </div>
+  </div>
+
+  <!-- The input section displays the email box and the submit button - DAWN-->
+
+
+<style>
+
+  body{
+      background-image: url(Hokusai-wave.jpg);
+      background-size:cover;
+  }
+
+  input {
+      border: 5px solid black;
+      width: 30%;
+      padding: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 3%;
+  }
+
+  input[type="submit"]
+    {
+        background: purple;
+        color: white;
+        padding: 5px;
+      }
+
+  h1{
+    color: rgba(204, 0, 102, 1);
+  }
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+
+  <!-- styling the newsletter sign-up box to be transparent - DAWN -->
+
+  div.background {
+      border: 1px, solid black;
+  }
+
+  div.transbox {
+    float: centre;
+    text-align: center;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 10% 5% 1% 5%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 15px;
+    opacity: .9;
+    filter: alpha(opacity=50); <!-- this line for IE 8 and earlier -->
+    }
+
+  div.transbox p {              <!-- The p section here is styling the paragraph in the Newsletter box-->
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+    }
+
+</style>
+
+</body>
+</html>
