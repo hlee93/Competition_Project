@@ -2,11 +2,12 @@
   border-style: solid;
 }
 
+/*snow animation*/
 .snow {
    background-color: #333;
  }
 
-#snow{
+#snow {
 	background: none;
 	font-family: Androgyne;
 	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'),
@@ -46,6 +47,8 @@
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
 
+/*leaves animation*/
+
 .fallingLeaves{
 	top: 50%;
 	background:#fff;
@@ -55,7 +58,6 @@
 	left:0%;
 	background: none;
   z-index: 1;
-
 }
 
 .fallingLeaves {
@@ -106,40 +108,42 @@
   -webkit-animation-delay: 8s;
   -moz-animation-delay: 8s;
 }
+
 @-webkit-keyframes fallingLeaves {
   0% {
     opacity: 1;
-
-	-webkit-transform: translate(0, 0px) rotateZ(0deg);
+    -webkit-transform: translate(0, 0px) rotateZ(0deg);
   }
+
   75% {
     opacity: 1;
-
-	-webkit-transform: translate(100px, 600px) rotateZ(270deg);
+    -webkit-transform: translate(100px, 600px) rotateZ(270deg);
   }
+
   100% {
     opacity: 0;
-
-	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+    -webkit-transform: translate(150px, 800px) rotateZ(360deg);
   }
 }
+
 @-moz-keyframes fallingLeaves {
   0% {
     opacity: 1;
-
-	-webkit-transform: translate(0, 0px) rotateZ(0deg);
+    -webkit-transform: translate(0, 0px) rotateZ(0deg);
   }
+
   75% {
     opacity: 1;
-
-	-webkit-transform: translate(100px, 600px) rotateZ(270deg);
+    -webkit-transform: translate(100px, 600px) rotateZ(270deg);
   }
+
   100% {
     opacity: 0;
-
-	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+    -webkit-transform: translate(150px, 800px) rotateZ(360deg);
   }
 }
+
+/*sun animation*/
 
 .svg-sun{
   width:125px;
@@ -155,12 +159,11 @@
   -ms-transform-origin: center center;
   transform-origin:50% 50%;
 
--webkit-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
--moz-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
--o-animation:spin 25s linear infinite, sun-glow 3s 0s linear infinite;
--ms-animation: spin 25s linear infinite, sun-glow 3s 0s ease-in-out infinite;
-animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
-
+  -webkit-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+  -moz-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+  -o-animation:spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+  -ms-animation: spin 25s linear infinite, sun-glow 3s 0s ease-in-out infinite;
+  animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
 }
 
 #sun{
@@ -174,48 +177,55 @@ animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
 	50% { fill: #e67e22; stroke:#e67e22;}
 	100% { fill: #f1c40f; stroke:#f1c40f;}
 }
+
 @-moz-keyframes sun-glow {
 	0% { fill: #f1c40f; stroke:#f1c40f;}
 	50% { fill: #e67e22; stroke:#e67e22;}
 	100% { fill: #f1c40f; stroke:#f1c40f;}
 }
+
 @-o-keyframes sun-glow {
 	0% { fill: #f1c40f; stroke:#f1c40f;}
 	50% { fill: #e67e22; stroke:#e67e22;}
 	100% { fill: #f1c40f; stroke:#f1c40f;}
 }
+
 @-ms-keyframes sun-glow {
 	0% { fill: #f1c40f; stroke:#f1c40f;}
 	50% { fill: #e67e22; stroke:#e67e22;}
 	100% { fill: #f1c40f; stroke:#f1c40f;}
 }
+
 @keyframes sun-glow {
 	0% { fill: #f1c40f; stroke:#f1c40f;}
 	50% { fill: #e67e22; stroke:#e67e22;}
 	100% { fill: #f1c40f; stroke:#f1c40f;}
 }
 
-
 @-webkit-keyframes spin{
 	100% {
 		-webkit-transform: rotate(360deg);
 	}
 }
+
 @-moz-keyframes spin{
 	100% {
 		-moz-transform: rotate(360deg);
 	}
 }
+
 @-o-keyframes spin{
 	100% {
 		-o-transform: rotate(360deg);
 	}
 }
+
 @-ms-keyframes spin{
 	100% {
 		-ms-transform: rotate(360deg);
 	}
 }
+
 @keyframes spin{
 	100% {
 		transform: rotate(360deg);
@@ -223,10 +233,324 @@ animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
 }
 
 
+/* sakura animation*/
+
+@-webkit-keyframes fall{
+  0% {
+    opacity:.9;top:0
+  }
+  100% {
+    opacity:.2;top:100%
+  }
+}
+
+@keyframes fall{
+  0% {
+    opacity:.9;top:0
+  }
+  100% {
+    opacity:.2;top:100%
+  }
+}
+
+@-webkit-keyframes blow-soft-left{
+  0% {
+    margin-left:0
+  }
+  100% {
+    margin-left:-50%
+  }
+}
+
+@keyframes blow-soft-left{
+  0% {
+    margin-left:0
+    }
+  100% {
+    margin-left:-50%
+  }
+}
+
+@-webkit-keyframes blow-medium-left{
+  0% {
+    margin-left:0
+    }
+  100% {
+    margin-left:-100%
+  }
+}
+
+@keyframes blow-medium-left{
+  0% {
+    margin-left:0
+    }
+  100% {
+    margin-left:-100%
+  }
+}
+
+@-webkit-keyframes blow-soft-right{
+  0% {
+    margin-left:0
+    }
+  100% {
+    margin-left:50%
+  }
+}
+
+@keyframes blow-soft-right{
+  0% {
+    margin-left:0
+    }
+  100% {
+    margin-left:50%
+  }
+}
+
+@-webkit-keyframes blow-medium-right{
+  0% {
+    margin-left:0
+    }
+  100% {
+    margin-left:100%
+  }
+}
+
+@keyframes blow-medium-right{
+  0% {
+    margin-left:0
+    }
+  100% {
+    margin-left:100%
+  }
+}
+
+@-webkit-keyframes sway-0{
+  0% {
+    -webkit-transform:rotate(-5deg)
+    }
+  40% {
+    -webkit-transform:rotate(28deg)
+      }
+  100% {
+    -webkit-transform:rotate(3deg)
+  }
+}
+
+@keyframes sway-0{
+  0% {
+    -ms-transform:rotate(-5deg);transform:rotate(-5deg)
+    }
+  40% {
+    -ms-transform:rotate(28deg);transform:rotate(28deg)
+      }
+  100% {
+    -ms-transform:rotate(3deg);transform:rotate(3deg)
+  }
+}
+
+@-webkit-keyframes sway-1{
+  0% {
+    -webkit-transform:rotate(10deg)
+    }
+  40% {
+    -webkit-transform:rotate(43deg)
+    }
+  100% {
+    -webkit-transform:rotate(15deg)
+  }
+}
+
+@keyframes sway-1{
+  0% {
+    -ms-transform:rotate(10deg);transform:rotate(10deg)
+    }
+  40% {
+    -ms-transform:rotate(43deg);transform:rotate(43deg)
+    }
+  100% {
+    -ms-transform:rotate(15deg);transform:rotate(15deg)
+  }
+}
+
+@-webkit-keyframes sway-2{
+  0% {
+    -webkit-transform:rotate(15deg)
+    }
+  40% {
+    -webkit-transform:rotate(56deg)
+      }
+  100% {
+    -webkit-transform:rotate(22deg)
+  }
+}
+
+@keyframes sway-2{
+  0% {
+    -ms-transform:rotate(15deg);transform:rotate(15deg)
+    }
+  40% {
+    -ms-transform:rotate(56deg);transform:rotate(56deg)
+      }
+  100% {
+    -ms-transform:rotate(22deg);transform:rotate(22deg)
+  }
+}
+@-webkit-keyframes sway-3{
+  0% {
+  -webkit-transform:rotate(25deg)
+    }
+  40% {
+  -webkit-transform:rotate(74deg)
+      }
+  100% {
+  -webkit-transform:rotate(37deg)
+  }
+}
+
+@keyframes sway-3{
+  0% {
+    -ms-transform:rotate(25deg);transform:rotate(25deg)
+    }
+  40% {
+    -ms-transform:rotate(74deg);transform:rotate(74deg)
+      }
+  100% {
+    -ms-transform:rotate(37deg);transform:rotate(37deg)
+  }
+}
+
+@-webkit-keyframes sway-4{
+  0% {
+    -webkit-transform:rotate(40deg)
+    }
+  40% {
+    -webkit-transform:rotate(68deg)
+      }
+  100% {
+    -webkit-transform:rotate(25deg)
+  }
+}
+
+@keyframes sway-4{
+  0% {
+    -ms-transform:rotate(40deg);transform:rotate(40deg)
+    }
+  40% {
+    -ms-transform:rotate(68deg);transform:rotate(68deg)
+      }
+  100% {
+    -ms-transform:rotate(25deg);transform:rotate(25deg)
+  }
+}
+
+@-webkit-keyframes sway-5{
+  0% {
+    -webkit-transform:rotate(50deg)
+    }
+  40% {
+    -webkit-transform:rotate(78deg)
+      }
+  100% {
+    -webkit-transform:rotate(40deg)
+  }
+}
+
+@keyframes sway-5{
+  0% {
+    -ms-transform:rotate(50deg);transform:rotate(50deg)
+    }
+  40% {
+    -ms-transform:rotate(78deg);transform:rotate(78deg)
+      }
+  100% {
+    -ms-transform:rotate(40deg);transform:rotate(40deg)
+  }
+}
+
+@-webkit-keyframes sway-6{
+  0% {
+    -webkit-transform:rotate(65deg)
+    }
+  40% {
+    -webkit-transform:rotate(92deg)
+      }
+  100% {
+    -webkit-transform:rotate(58deg)
+  }
+}
+
+@keyframes sway-6{
+  0% {
+    -ms-transform:rotate(65deg);transform:rotate(65deg)
+    }
+  40% {
+    -ms-transform:rotate(92deg);transform:rotate(92deg)
+      }
+  100% {
+    -ms-transform:rotate(58deg);transform:rotate(58deg)
+  }
+}
+
+@-webkit-keyframes sway-7{
+  0% {
+    -webkit-transform:rotate(72deg)
+    }
+  40% {
+    -webkit-transform:rotate(118deg)
+      }
+  100% {
+    -webkit-transform:rotate(68deg)
+  }
+}
+
+@keyframes sway-7{
+  0% {
+    -ms-transform:rotate(72deg);transform:rotate(72deg)
+    }
+  40% {
+    -ms-transform:rotate(118deg);transform:rotate(118deg)
+      }
+  100% {
+    -ms-transform:rotate(68deg);transform:rotate(68deg)absolute
+  }
+}
+
+@-webkit-keyframes sway-8{
+  0% {
+    -webkit-transform:rotate(94deg)
+    }
+  40% {
+    -webkit-transform:rotate(136deg)
+      }
+  100% {
+    -webkit-transform:rotate(82deg)
+  }
+}
+
+@keyframes sway-8{
+  0% {
+    -ms-transform:rotate(94deg);transform:rotate(94deg)
+    }
+  40% {
+   -ms-transform:rotate(136deg);transform:rotate(136deg)
+      }
+  100% {
+   -ms-transform:rotate(82deg);transform:rotate(82deg)
+ }
+}
+
+.sakura {
+  background:-webkit-linear-gradient(120deg,rgba(255,183,197,.9),rgba(255,197,208,.9));
+  background:linear-gradient(120deg,rgba(255,183,197,.9),rgba(255,197,208,.9));
+  pointer-events:none;
+  position:absolute}
+
+
+
 p1 {
 
   font-weight: bold;
-
 }
 
 h1 {
@@ -234,4 +558,11 @@ h1 {
   font-family: helvetica;
   width: 100%;
   top: 0;
+}
+
+/* to stop scroll bar on sakura animation*/
+
+ #spring {
+   overflow-y: hidden;
+
 }

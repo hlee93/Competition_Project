@@ -8,47 +8,43 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <a href="https://twitter.com/intent/tweet?button_hashtag=Travel" class="twitter-hashtag-button" data-show-count="false">Tweet #Travel</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
+  <link type="text/css" rel="stylesheet" media="screen" href="/css/jquery-sakura.min.css" />
+</head>
 <!-- Linking to javascript and bootstrap libraries-->
 
-</head>
 <body>
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-3 col-md-3 col-lg-3 ">
+    <div id="spring" class="col-sm-3 col-md-3 col-lg-3 ">
       <img src="japan.png" style= "width: 100%">
-          <span></span>
-          <span></span>
-
-        </div>
+       </div>
+        <script  src="jquery-sakura.min.js"></script>
         <div class="col-sm-9 col-md-9 sm-lg-9">
         <h1>Spring</h1>
         <p> Hanami (Cherry blossom viewing) is an extremely popular event at this time of the year. A special
           weather forecast is shown on the news, showing which areas are in bloom and if it is perfect picnic weather.
-     <div class="w3-section" style="stylesheet"></div>
-   </div>
+        <div class="w3-section" style="stylesheet">
+      </div>
+    </div>
   </div>
-</div>
+  </div>
 
-<div class="container-fluid">
-    <div class="col-sm-9 col-md-9 col-lg-9 ">
-        <h1>Summer</h1>
-        <p1> Summer in Japan can be incredibly hot and humid. Shaved ice is a popular food to eat during this season.
-          There are various firework displays during the summer festivals.
-          Many people wear summer kimono called "Yukata" during the festivals.
-        </p1>
+  <div class="container-fluid">
+      <div class="col-sm-9 col-md-9 col-lg-9 ">
+          <h1>Summer</h1>
+          <p1> Summer in Japan can be incredibly hot and humid. Shaved ice is a popular food to eat during this season.
+            There are various firework displays during the summer festivals.
+            Many people wear summer kimono called "Yukata" during the festivals.</p1>
+              </div>
+              <div class="col-sm-3 col-md-3 sm-lg-3">
+                <img src="japan.png" style= "width: 100%">
+                <svg class="svg-sun" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
+              <circle cx="50" cy="50" r="35" id="sun"></circle>
+            </svg>
           </div>
-          <div class="col-sm-3 col-md-3 sm-lg-3">
-            <img src="japan.png" style= "width: 100%">
-            <svg class="svg-sun" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
-            <circle cx="50" cy="50" r="35" id="sun"></circle>
-          </svg>
-        </div>
-      <div class="w3-section" style="stylesheet"></div>
-   </div>
-
+        <div class="w3-section" style="stylesheet"></div>
+     </div>
 
 <div class="container-fluid">
   <div class="row">
@@ -67,29 +63,42 @@
       </div>
     </div>
 
-<div class="container-fluid">
-  <div class="row leafy-temple">
-    <div class="col-sm-9 col-md-9 col-lg-9 ">
-      <h1>Autumn</h1>
-        <p>Autumn time in Japan is a beautiful showcase of reds and yellows, as the weather turns milder.
-          Prices at top tourist destinatins are at their lowest during this time of the year.
-          Temples are popular places to visit at this time of the year.
-        </p>
-        </div>
-        <div class="col-sm-3 col-md-3 sm-lg-3">
-          <img src="japan.png" style= "width: 100%">
-          <div class="fallingLeaves">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+
+          <div class="container-fluid">
+            <div class="row leafy-temple">
+              <div class="col-sm-9 col-md-9 col-lg-9 ">
+                <h1>Autumn</h1>
+                  <p>Autumn time in Japan is a beautiful showcase of reds and yellows, as the weather turns milder.
+                    Prices at top tourist destinatins are at their lowest during this time of the year.
+                    Temples are popular places to visit at this time of the year.
+                  </p>
+                  </div>
+                  <div class="col-sm-3 col-md-3 sm-lg-3">
+                    <img src="japan.png" style= "width: 100%">
+                    <div class="fallingLeaves">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+               <div class="w3-section" style="stylesheet"></div>
+             </div>
+            </div>
           </div>
-        </div>
-     <div class="w3-section" style="stylesheet"></div>
-   </div>
-  </div>
-</div>
+
+<script>
+  // domReady
+  $(function() {
+      $('#spring').sakura();
+  });
+
+  // windowLoad
+  $(window).load(function() {
+      $('#spring').sakura();
+  });
+  </script>
 
 
 
