@@ -18,17 +18,20 @@ input {
   border: 5px solid black;
   padding: 10px;
   font-size: 15px;
+  font-weight: bold;
 }
 
 input[type="submit"] {
   background: purple;
   color: white;
+  padding: 5px;
 }
 
-.btn-toolbar {
-  padding-top: 5%;
-  padding-left: 31%;
+p {
+  font-size: 15px;
+  padding: 5px
 }
+
 
 .container2 {
   border-style: none;
@@ -37,4 +40,9 @@ input[type="submit"] {
   margin-right: 1%;
   padding-bottom: 2%;
   background-color: skyblue;
+
+}
+
+.btn-toolbar {
+  margin-left: 30%;
 }
